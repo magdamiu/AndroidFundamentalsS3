@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyFirstAndroidApplication</string>
+    <string name="hello_world">hello world</string>
+    <string name="click_me">Click me</string>
+    <string name="termeni_si_conditii">termeni si conditii</string>
+    <string name="email_address">Email address</string>
+    <string name="submit">submit</string>
+    <string name="accepta_termeni_si_conditii">Accepta termeni si conditii</string>
+</resources>
