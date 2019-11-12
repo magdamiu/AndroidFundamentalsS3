@@ -6,4 +6,6 @@
     <string name="email_address">Email address</string>
     <string name="submit">submit</string>
     <string name="accepta_termeni_si_conditii">Accepta termeni si conditii</string>
+    <string name="long_text">A view group that allows the view hierarchy placed within it to be scrolled. Scroll view may have only one direct child placed within it. To add multiple views within the scroll view, make the direct child you add a view group, for example LinearLayout, and place additional views within that LinearLayout. Scroll view supports vertical scrolling only. For horizontal scrolling, use HorizontalScrollView instead. Never add a RecyclerView or ListView to a scroll view. Doing so results in poor user interface performance and a poor user experience.</string>
+    <string name="title_activity_second">SecondActivity</string>
 </resources>
