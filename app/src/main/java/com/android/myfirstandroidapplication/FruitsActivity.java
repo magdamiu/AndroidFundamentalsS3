@@ -5,6 +5,8 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,6 +25,7 @@ public class FruitsActivity extends AppCompatActivity {
         getFruits();
         setLayoutManager();
         setAdapter();
+        setRecyclerViewListener();
     }
 
     private void initView() {
@@ -38,6 +41,24 @@ public class FruitsActivity extends AppCompatActivity {
         FruitsAdapter fruitsAdapter = new FruitsAdapter(fruits);
         recyclerViewFruits.setAdapter(fruitsAdapter);
     }
+
+    private void setRecyclerViewListener() {
+        recyclerViewFruits.addOnItemTouchListener(new RecyclerTouchListener(this,
+                recyclerViewFruits, new FruitsClickListener() {
+            @Override
+            public void onClick(View view, final int position) {
+                Toast.makeText(FruitsActivity.this, getString(R.string.single_click) + position,
+                        Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+                Toast.makeText(FruitsActivity.this, getString(R.string.long_click) + position,
+                        Toast.LENGTH_LONG).show();
+            }
+        }));
+    }
+
 
     private void getFruits() {
         fruits = new ArrayList<>();

@@ -10,4 +10,10 @@
     <string name="title_activity_second">SecondActivity</string>
     <string name="open_receiver_activity">Open Receiver Activity</string>
     <string name="call_phone_number">Call Phone Number</string>
+    <string name="single_click">Single click</string>
+    <string name="long_click">Long click</string>
+    <string name="ui_elements">UI elements</string>
+    <string name="spinner_with_food">Spinner with food</string>
+    <string name="recyclerview_with_fruits">RecyclerView with fruits</string>
+    <string name="activities">Activities</string>
 </resources>

@@ -34,7 +34,7 @@ public class FruitsAdapter extends RecyclerView.Adapter<FruitsViewHolder> {
         if(currentFruit.getUrlPicture() != null) {
             Picasso.get().load(currentFruit.getUrlPicture()).into(holder.getImageViewFruit());
         } else {
-            Picasso.get().load(R.drawable.ic_launcher_background).into(holder.getImageViewFruit());
+            Picasso.get().load(R.drawable.android).into(holder.getImageViewFruit());
         }
     }
 
