@@ -1,6 +1,7 @@
 package com.android.myfirstandroidapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,5 +29,9 @@ public class HomeActivity extends AppCompatActivity {
 
     public void activitiesOnClick(View view) {
         startActivity(new Intent(this, LifecycleActivity.class));
+    }
+
+    public void openStaticFragmentOnClick(View view) {
+        startActivity(new Intent(this, FragmentActivity.class));
     }
 }

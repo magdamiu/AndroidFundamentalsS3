@@ -16,4 +16,14 @@
     <string name="spinner_with_food">Spinner with food</string>
     <string name="recyclerview_with_fruits">RecyclerView with fruits</string>
     <string name="activities">Activities</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_static">Fragment Static</string>
+    <string name="open_website">open website</string>
+    <string name="open_location">open location</string>
+    <string name="share_text">share text</string>
+    <string name="call">call</string>
+    <string name="cant_handle">Can not handle it</string>
+    <string name="share_text_with">Share text with</string>
 </resources>
