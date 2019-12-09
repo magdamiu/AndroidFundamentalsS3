@@ -1,4 +1,4 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.activity_sample;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -12,6 +12,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.android.myfirstandroidapplication.R;
 
 public class LifecycleActivity extends AppCompatActivity {
 

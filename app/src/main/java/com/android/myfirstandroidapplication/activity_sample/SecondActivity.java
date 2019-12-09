@@ -1,7 +1,8 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.activity_sample;
 
 import android.os.Bundle;
 
+import com.android.myfirstandroidapplication.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 

@@ -1,10 +1,12 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.activity_sample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.android.myfirstandroidapplication.R;
 
 public class ReceiverActivity extends AppCompatActivity {
 

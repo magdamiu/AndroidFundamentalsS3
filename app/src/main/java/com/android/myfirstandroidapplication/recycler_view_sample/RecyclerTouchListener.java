@@ -1,4 +1,4 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.recycler_view_sample;
 
 import android.content.Context;
 import android.view.GestureDetector;
@@ -6,6 +6,8 @@ import android.view.MotionEvent;
 import android.view.View;
 
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.android.myfirstandroidapplication.recycler_view_sample.FruitsClickListener;
 
 public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
 

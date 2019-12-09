@@ -7,6 +7,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.android.myfirstandroidapplication.activity_sample.FoodActivity;
+import com.android.myfirstandroidapplication.activity_sample.LifecycleActivity;
+import com.android.myfirstandroidapplication.activity_sample.MainActivity;
+import com.android.myfirstandroidapplication.recycler_view_sample.FruitsActivity;
+import com.android.myfirstandroidapplication.tab_sample.TabsActivity;
+
 public class HomeActivity extends AppCompatActivity {
 
     @Override
@@ -33,5 +39,13 @@ public class HomeActivity extends AppCompatActivity {
 
     public void openStaticFragmentOnClick(View view) {
         startActivity(new Intent(this, FragmentActivity.class));
+    }
+
+    public void openTabsOnClick(View view) {
+        startActivity(new Intent(this, TabsActivity.class));
+    }
+
+    public void navDrawerOnClick(View view) {
+        startActivity(new Intent(this, com.android.myfirstandroidapplication.fragments.HomeActivity.class));
     }
 }

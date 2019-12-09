@@ -1,4 +1,4 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.activity_sample;
 
 public class Fruit {
     private String name;

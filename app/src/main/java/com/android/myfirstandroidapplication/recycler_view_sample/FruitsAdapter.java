@@ -1,4 +1,4 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.recycler_view_sample;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.myfirstandroidapplication.activity_sample.Fruit;
+import com.android.myfirstandroidapplication.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

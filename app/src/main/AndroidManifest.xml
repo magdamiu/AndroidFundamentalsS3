@@ -15,28 +15,28 @@
             android:name=".fragments.HomeActivity"
             android:label="@string/title_activity_home"
             android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".fragments.DisplayFromFragmentActivity" />
+        <activity android:name=".fragments.MessageActivity" />
+        <activity android:name=".fragments.DynamicFragmentActivity" />
+        <activity android:name=".fragments.FragmentsActivity" />
+        <activity android:name=".tab_sample.TabsActivity"></activity>
+        <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".fragments.DisplayFromFragmentActivity" />
-        <activity android:name=".fragments.MessageActivity" />
-        <activity android:name=".fragments.DynamicFragmentActivity" />
-        <activity android:name=".fragments.FragmentsActivity" />
-        <activity android:name=".HomeActivity">
-
-        </activity>
-        <activity android:name=".ReceiverActivity" />
-        <activity android:name=".LifecycleActivity" />
-        <activity android:name=".FruitsActivity" />
-        <activity android:name=".FoodActivity" />
+        <activity android:name=".activity_sample.ReceiverActivity" />
+        <activity android:name=".activity_sample.LifecycleActivity" />
+        <activity android:name=".recycler_view_sample.FruitsActivity" />
+        <activity android:name=".activity_sample.FoodActivity" />
         <activity
-            android:name=".SecondActivity"
+            android:name=".activity_sample.SecondActivity"
             android:label="@string/title_activity_second"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".activity_sample.MainActivity" />
     </application>
 
 </manifest>

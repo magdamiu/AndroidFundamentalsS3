@@ -1,4 +1,4 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.activity_sample;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.android.myfirstandroidapplication.R;
 
 public class MainActivity extends AppCompatActivity {
 

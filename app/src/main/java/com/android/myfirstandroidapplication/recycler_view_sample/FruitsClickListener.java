@@ -1,4 +1,4 @@
-package com.android.myfirstandroidapplication;
+package com.android.myfirstandroidapplication.recycler_view_sample;
 
 import android.view.View;
 
