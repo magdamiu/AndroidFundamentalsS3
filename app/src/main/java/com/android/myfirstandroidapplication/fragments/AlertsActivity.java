@@ -6,9 +6,11 @@ import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.DatePicker;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
@@ -29,11 +31,20 @@ public class AlertsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_date_and_date_time_pickers);
         initView();
+        setAnimation();
     }
 
     private void initView() {
         textViewDate = findViewById(R.id.textViewDate);
         textViewDateTime = findViewById(R.id.textViewDateTime);
+    }
+
+    private void setAnimation() {
+        LinearLayout linearLayout = (LinearLayout) findViewById(R.id.layoutMain);
+        AnimationDrawable animationDrawable = (AnimationDrawable) linearLayout.getBackground();
+        animationDrawable.setEnterFadeDuration(2500);
+        animationDrawable.setExitFadeDuration(5000);
+        animationDrawable.start();
     }
 
     public void openDatePickerOnClick(View view) {
