@@ -51,4 +51,14 @@
     <string name="tab_label3">TAB 3</string>
     <string name="tabs">TABS</string>
     <string name="nav_drawer">navigation drawer</string>
+    <string name="date_and_datetime_pickers">Date and DateTime pickers</string>
+    <string name="datetime_picker">DateTime Picker</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="open_custom_dialog">Open custom dialog</string>
+    <string name="notice">Notice</string>
+    <string name="alert_title">Take care</string>
+    <string name="launch_app">Launch app</string>
+    <string name="reminde_me">Reminde me</string>
+    <string name="click">click</string>
+    <string name="cancel">Cancel</string>
 </resources>

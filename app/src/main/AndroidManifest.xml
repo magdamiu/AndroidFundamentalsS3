@@ -11,16 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".fragments.AlertsActivity"></activity>
         <activity
             android:name=".fragments.HomeActivity"
             android:label="@string/title_activity_home"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".fragments.DisplayFromFragmentActivity" />
         <activity android:name=".fragments.MessageActivity" />
         <activity android:name=".fragments.DynamicFragmentActivity" />
         <activity android:name=".fragments.FragmentsActivity" />
-        <activity android:name=".tab_sample.TabsActivity"></activity>
+        <activity android:name=".tab_sample.TabsActivity" />
         <activity android:name=".HomeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -10,6 +10,7 @@ import android.view.View;
 import com.android.myfirstandroidapplication.activity_sample.FoodActivity;
 import com.android.myfirstandroidapplication.activity_sample.LifecycleActivity;
 import com.android.myfirstandroidapplication.activity_sample.MainActivity;
+import com.android.myfirstandroidapplication.fragments.AlertsActivity;
 import com.android.myfirstandroidapplication.recycler_view_sample.FruitsActivity;
 import com.android.myfirstandroidapplication.tab_sample.TabsActivity;
 
@@ -47,5 +48,9 @@ public class HomeActivity extends AppCompatActivity {
 
     public void navDrawerOnClick(View view) {
         startActivity(new Intent(this, com.android.myfirstandroidapplication.fragments.HomeActivity.class));
+    }
+
+    public void dateAndDateTimePickerOnClick(View view) {
+        startActivity(new Intent(this, AlertsActivity.class));
     }
 }
