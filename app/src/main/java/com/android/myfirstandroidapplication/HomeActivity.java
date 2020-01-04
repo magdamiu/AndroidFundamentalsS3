@@ -12,6 +12,7 @@ import com.android.myfirstandroidapplication.activity_sample.LifecycleActivity;
 import com.android.myfirstandroidapplication.activity_sample.MainActivity;
 import com.android.myfirstandroidapplication.fragments.AlertsActivity;
 import com.android.myfirstandroidapplication.recycler_view_sample.FruitsActivity;
+import com.android.myfirstandroidapplication.retrofit_sample.GithubActivity;
 import com.android.myfirstandroidapplication.tab_sample.TabsActivity;
 
 public class HomeActivity extends AppCompatActivity {
@@ -52,5 +53,9 @@ public class HomeActivity extends AppCompatActivity {
 
     public void dateAndDateTimePickerOnClick(View view) {
         startActivity(new Intent(this, AlertsActivity.class));
+    }
+
+    public void retrofitSampleOnClick(View view) {
+        startActivity(new Intent(this, GithubActivity.class));
     }
 }

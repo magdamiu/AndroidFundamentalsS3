@@ -1,11 +1,13 @@
 package com.android.myfirstandroidapplication.fragments;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.graphics.drawable.AnimationDrawable;
 import android.os.Bundle;
 import android.view.View;
@@ -16,6 +18,7 @@ import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.android.myfirstandroidapplication.R;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.Calendar;
 
@@ -124,5 +127,22 @@ public class AlertsActivity extends AppCompatActivity {
 // create and show the alert dialog
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    public void openSnackBarOnClick(View view) {
+        Snackbar snackbar = Snackbar
+                .make(view, R.string.error_occured, Snackbar.LENGTH_LONG)
+                .setAction(R.string.retry, new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Toast.makeText(AlertsActivity.this, getString(R.string.retry_message), Toast.LENGTH_LONG).show();
+                    }
+                });
+        snackbar.setActionTextColor(Color.RED);
+        View snackbarView = snackbar.getView();
+        snackbarView.setBackgroundColor(ContextCompat.getColor(this, R.color.colorAccent));
+        TextView textView = snackbarView.findViewById(com.google.android.material.R.id.snackbar_text);
+        textView.setTextColor(Color.GREEN);
+        snackbar.show();
     }
 }

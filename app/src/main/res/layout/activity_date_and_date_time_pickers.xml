@@ -2,26 +2,27 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutMain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/layoutMain"
     android:background="@drawable/animation"
+    android:orientation="vertical"
     android:padding="@dimen/activity_horizontal_margin"
     tools:context=".fragments.AlertsActivity">
 
+
     <TextView
-        tools:text="helllo hello"
-        style="@style/LargeFontBlue"
         android:id="@+id/textViewDate"
+        style="@style/LargeFontBlue"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></TextView>
+        android:layout_height="wrap_content"
+        tools:text="helllo hello"></TextView>
 
     <Button
-        android:background="@drawable/shape_and_stroke"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:background="@drawable/shape_and_stroke"
         android:onClick="openDatePickerOnClick"
         android:text="@string/date_picker"></Button>
 
@@ -104,5 +105,25 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:src="@android:drawable/ic_dialog_email"
+        android:tint="@color/colorPrimary"
+        app:fabSize="normal" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openSnackBarOnClick"></Button>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </LinearLayout>
