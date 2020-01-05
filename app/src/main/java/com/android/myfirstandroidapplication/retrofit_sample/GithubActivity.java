@@ -3,7 +3,6 @@ package com.android.myfirstandroidapplication.retrofit_sample;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.myfirstandroidapplication.R;
@@ -62,7 +61,7 @@ public class GithubActivity extends AppCompatActivity {
         issuesRepository.postIssue(new OnPostIssueCallback() {
             @Override
             public void onSuccess(Issue issueResult) {
-                Logging.show("Github users = ", issueResult.toString());
+                Logging.show("Github issue = ", issueResult.toString());
                 Toast.makeText(GithubActivity.this, issueResult.toString(), Toast.LENGTH_LONG)
                         .show();
             }
