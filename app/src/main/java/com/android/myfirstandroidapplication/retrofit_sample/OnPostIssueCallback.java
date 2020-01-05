@@ -2,7 +2,7 @@ package com.android.myfirstandroidapplication.retrofit_sample;
 
 import java.util.List;
 
-public interface OnGetUsersCallback {
-    void onSuccess(List<User> users);
+public interface OnPostIssueCallback {
+    void onSuccess(Issue issue);
     void onError();
 }
