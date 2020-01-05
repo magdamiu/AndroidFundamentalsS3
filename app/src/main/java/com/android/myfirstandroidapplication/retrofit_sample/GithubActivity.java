@@ -26,7 +26,7 @@ public class GithubActivity extends AppCompatActivity {
         issue.setTitle("This is a test #2");
         issue.setBody("Post an issue from code :) ");
 
-        String token = "token 89a62ee1cf109c7aaf4ef77217ef007252d29628";
+        String token = "token ";
         postIssue("magdamiu", "AndroidFundamentalsS3", token, issue);
 
     }
