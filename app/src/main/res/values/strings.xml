@@ -65,4 +65,14 @@
     <string name="retry">retry</string>
     <string name="retry_message">try again later</string>
     <string name="retrofit_sample">Retrofit Sample</string>
+    <string name="file_saved">File saved</string>
+    <string name="cannot_save">Can not save</string>
+    <string name="cannot_write_external">Can not write external</string>
+    <string name="file_name">File name</string>
+    <string name="create_file_internal">Create file internal</string>
+    <string name="read_file_internal">Read file internal</string>
+    <string name="create_file_external">Create file external</string>
+    <string name="read_file_external">Read file external</string>
+    <string name="room_example">Room example</string>
+    <string name="get_data">Get data</string>
 </resources>
